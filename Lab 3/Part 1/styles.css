@@ -3,14 +3,17 @@ body {
 }
 
 h1 {
-  color: #375e97;
+  color: #FF69B4;
   font-size: 2em;
   font-family: Georgia, "Times New Roman", Times, serif;
-  border-bottom: 1px solid #375e97;
+  border-bottom: 10px solid #800080;
+  border-bottom-style: dotted;
+  
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
+  font-style: italic;
 }
 
 .job-title {
@@ -21,8 +24,18 @@ h2 {
 a:link,
 a:visited {
   color: #fb6542;
+ 
+}
+
+ul {
+   background-color: #eeeeee;
+   border: 5px solid #800080;
+
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline #008000;
+  color: green;
+
 }
+
