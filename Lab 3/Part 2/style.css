@@ -3,3 +3,9 @@ html {
 }
 
 /* Your CSS below here */
+
+.box {
+	border: 5px solid red;
+	background-color: red;
+	width: 200px;
+	height: 150pc;
