@@ -48,9 +48,30 @@ h1 {
 	text-align: center;
 }
 
+
+
+/* fonts for page */
+
 @font-face {
-  font-family: "myFont";
-  src: url("./fonts/PlayfairDisplay-Black.ttf");
+  font-family: playfair;
+  src: url("./fonts/playfair/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+html {
+  font-family: arial;
+}
+
+p, li, ul, ol{
+	font-family: playfair;
+}
+
+@font-face {
+  font-family: DMSans;
+  src: url("./fonts/Dm_Sans/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf");
+}
+
+p, li, ul, ol{
+	font-family: DM_Sans;
 }
 
 
