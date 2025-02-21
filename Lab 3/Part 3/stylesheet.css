@@ -76,6 +76,34 @@ p, li, ul, ol{
 
 
 
+/* Working on the links  */
+
+/* not visited yet*/
+a:link {
+color: #A24857;
+}
+
+/* visited link*/
+a:visited {
+color:#9D00FF;
+}
+
+/* mouse over link */
+a:hover {
+color:#0000FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
