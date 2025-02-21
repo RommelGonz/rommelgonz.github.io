@@ -5,12 +5,14 @@ html {
 /* Your CSS below here */
 
 div{
-	width: 350px;
+	width: 200px;
 	height: 150px;
 	border: 5px solid black;
 	margin: auto;
 	vertical-align: center;
-	background-color: red;
-	line-height:200px;
+	color: white;
+	background-color: green;
+	line-height:160px;
 	text-align:center;
+	
 }
