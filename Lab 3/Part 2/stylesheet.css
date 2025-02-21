@@ -17,5 +17,16 @@ div{
 	text-align:center;
 	font-size:18px;
 	text-shadow: 2px 2px 2px black;
+	background-image:
+	linear-gradient(
+	135deg,
+	rgba(0,0,0,0%),
+	rgba(0,0,0,20%) 30%
+	);
+	box-shadow:
+	inset 2px 2px 3px rgba(255,255,255,60%),
+	inset -2px -2px 3px rgba(0,0,0,60%),
+	2px 2px 5px black
+	;
 	
 }
