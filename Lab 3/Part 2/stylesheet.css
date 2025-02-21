@@ -7,12 +7,15 @@ html {
 div{
 	width: 200px;
 	height: 150px;
-	border: 5px solid black;
+	border: 1px solid black;
+	border-radius: 30px;
 	margin: auto;
 	vertical-align: center;
 	color: white;
 	background-color: green;
 	line-height:160px;
 	text-align:center;
+	font-size:18px;
+	text-shadow: 2px 2px 2px black;
 	
 }
