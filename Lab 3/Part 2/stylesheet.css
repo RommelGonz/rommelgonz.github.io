@@ -5,10 +5,15 @@ html {
 /* Your CSS below here */
 
 div{
+
+/* The border stuff and box related stuff*/
+
 	width: 200px;
 	height: 150px;
 	border: 1px #006400;
 	border-radius: 30px;
+
+/* Inside the box stuff*/
 	margin: auto;
 	vertical-align: center;
 	color: white;
@@ -17,6 +22,8 @@ div{
 	text-align:center;
 	font-size:18px;
 	text-shadow: 2px 2px 2px black;
+
+/* Confusing fade in the box*/
 	background-image:
 	linear-gradient(
 	135deg,
