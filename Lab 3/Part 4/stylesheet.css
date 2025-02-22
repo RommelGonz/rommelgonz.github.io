@@ -26,18 +26,12 @@ body {
   nav {
     background-color: #000;
     padding: .5em;
-    position: fixed;
-    top: 0;
-    width: 100%
-    z-index: 1000;
   }
   
   nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    justify-content: center;
   }
   
   nav a {
@@ -54,13 +48,4 @@ body {
 
   .feature {
       width: 200px;
-      float: left;
-      margin-right: 1em;
   }
-
-
-
-
-
-
-
