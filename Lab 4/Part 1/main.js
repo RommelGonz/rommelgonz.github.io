@@ -1,4 +1,3 @@
-1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
@@ -9,27 +8,19 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-2. RAW TEXT STRINGS
-
-It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. The person reading this (yea you...) saw the whole thing, but was not surprised (because you've prob read this multiple different times) — :insertx: weighs 300 thousand pounds, and it was a hot day.
-
-Willy the Silly Goblin
-Big Daddy
-Father Christmas
-
-the soup kitchen
-Disneyland
-the White House
-
-spontaneously combusted
-melted into a puddle on the sidewalk
-turned into a slug and crawled away
-
-3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
+const storyText ="It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. The person reading this (yea you...) saw the whole thing, but was not surprised (because you've prob read this multiple different times) — :insertx: weighs 300 thousand pounds, and it was a hot day."
+const insertX = ["Willy the Silly Goblin","Big Daddy","LeBron James"];
+const insertY= ["The Backyardigans","Disneyland","the White House"];
+const insertZ= ["spontaneously combusted into hot flames that can kill you just by looking","melted into a puddle on the sidewalk","turned into a slug and crawled away"];
 
 randomize.addEventListener('click', result);
 
 function result() {
+let newStory = storyText;
+return newStory
+}
+
+console.log(result());
 
   if(customName.value !== '') {
     const name = customName.value;
