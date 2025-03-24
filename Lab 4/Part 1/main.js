@@ -1,4 +1,4 @@
-{
+
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
@@ -8,7 +8,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText ="It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. The person reading this (yea you...) saw the whole thing, but was not surprised (because you've prob read this multiple different times) — :insertx: weighs 300 thousand pounds, and it was a hot day."
+const storyText ="It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. The person reading this (yea you...) saw the whole thing, but was not surprised (because you've prob read this multiple different times) — :insertx: weighs 300 thousand pounds, and it was a hot day.";
 const insertX = ["Willy the Silly Goblin","Big Daddy","LeBron James"];
 const insertY= ["The Backyardigans","Disneyland","the White House"];
 const insertZ= ["spontaneously combusted into hot flames that can kill you just by looking","melted into a puddle on the sidewalk","turned into a slug and crawled away"];
@@ -24,15 +24,17 @@ console.log(result());
 
   if(customName.value !== '') {
     const name = customName.value;
+    newStory= newStory.replaceALL('Bob',name);
 
   }
 
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300);
     const temperature =  Math.round(94);
+newStory = newStory.replaceALL('94 fahrenheit',temperature);
+newStory = newStory.replaceALL('300 pounds', weight);
 
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
-}
