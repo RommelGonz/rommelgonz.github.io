@@ -20,3 +20,14 @@ newImage.setAttribute('alt', imgAlts[i].altText);
 thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
+btn.addEventListner("click", () => {
+if (btn.getAttribute("class") === "dark")) {
+btn.setAttribute("class", "light");
+btn.textContext = "Lighten";
+overlay.style.backgroundColor = "rgb(0 0 0 / 50%)';
+} else {
+btn.setAttribute("class","dark");
+btn.textContent = "Darken";
+overlay.style.backgroundColor = "rgb(0 0 0 /0%)";
+}
+});
