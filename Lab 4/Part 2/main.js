@@ -9,22 +9,28 @@ const images = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
 /* Declaring the alternative text for each image file */
 const imgAlts =[ 
-{altText: "Photo 1 - Big eye"}, {altText: "Photo 2 - Wavy photo"}, {altText: "Photo 3 - Flower"}, {altText: "Photo 4 - Egyptian wall"}, {altText: "Photo 5 - Big Moth"}
+{altText: "Photo 1 - Big eye"},
+{altText: "Photo 2 - Wavy photo"},
+{altText: "Photo 3 - Flower"},
+{altText: "Photo 4 - Egyptian wall"},
+{altText: "Photo 5 - Big Moth"}
 ]; 
 
 /* Looping through images */
-for (let i = 0; i < imgArr.length; i++) {
+for (let i = 0; i < images.length; i++) {
 const newImage = document.createElement('img');
-newImage.setAttribute('src', 'images/${imgArr[i]}');
+newImage.setAttribute('src', 'images/${images[i]}');
 newImage.setAttribute('alt', imgAlts[i].altText);
 thumbBar.appendChild(newImage);
-
+}
 /* Wiring up the Darken/Lighten button */
-btn.addEventListner("click", () => {
-if (btn.getAttribute("class") === "dark")) {
+
+btn.addEventListener("click", () => {
+const btnClass = btn.getAttribute('class');
+if (btnClass === "dark") {
 btn.setAttribute("class", "light");
-btn.textContext = "Lighten";
-overlay.style.backgroundColor = "rgb(0 0 0 / 50%)';
+btn.textContent = "Lighten";
+overlay.style.backgroundColor = "rgb(0 0 0 / 50%)";
 } else {
 btn.setAttribute("class","dark");
 btn.textContent = "Darken";
