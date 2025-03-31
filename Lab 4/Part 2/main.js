@@ -19,14 +19,15 @@ const imgAlts =[
 /* Looping through images */
 for (let i = 0; i < images.length; i++) {
 const newImage = document.createElement('img');
-displayedImage.setAttribute('src', 'images/${images[i]}');
+newImage.setAttribute('src',images[i]);
 newImage.setAttribute('alt', imgAlts[i].altText);
+thumbBar.appendChild(newImage)
 
 newImage.addEventListener('click', () => {
-displayedImage.setAttribute('src', 'images/${images[i]}');
+displayedImage.setAttribute('src', images[i]);
 displayedImage.setAttribute('alt', imgAlts[i].altText);
 });
-thumbBar.appendChild(newImage);
+
 }
 
 
