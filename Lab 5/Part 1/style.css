@@ -67,11 +67,66 @@ p, li, table {
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
+.related-header {
+  background-color: white;
+  padding: 10px 30px;
+  margin-bottom: 10px; /* Add margin below the header */
+}
+
+.related-header h2 {
+  text-align: left; /* Align "Related" heading to the left */
+  margin-top: 0; /* Remove default top margin for h2 */
+  margin-bottom: 0.5em; /* Add some bottom margin */
+}
+
+.related-header ul {
+  text-align: left;
+  padding-left: 1em; /* Add some indentation for the list */
+  list-style-type: none; /* Remove bullet points */
+}
+
+.related-header li {
+  margin-bottom: 0.3em; /* Add some spacing between list items */
+}
+
+.related-header a {
+  color: #0073e6; /* Blue to differentiate */
+  text-decoration: underline;
+}
+
+.related-header a:hover {
+  text-decoration: none;
+  color: #005bb5; /* Darker blue for hover effect */
+}
+
+.related-header .search {
+  display: flex;
+  align-items: center;
+  margin-top: 1em; /* Add some space above the search bar */
+}
+
+.related-header .search input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+.related-header .search input[type="search"] {
+  flex: 3;
+}
+
+.related-header .search input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+nav, article, footer {
   background-color: white;
 }
 
-article, footer, .secondary {
+article, footer {
   padding: 10px 30px;
 }
 
@@ -79,7 +134,7 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+nav {
   height: 50px;
   background-color: ff80ff;
   display: flex;
@@ -87,20 +142,20 @@ div[class="nav"] {
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -108,7 +163,7 @@ div[class="nav"] a {
   color: black;
 }
 
-div[class="nav"] .search {
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -116,16 +171,16 @@ div[class="nav"] .search {
   padding: 0 2em;
 }
 
-.search input {
+nav .search input {
   font-size: 1.6rem;
   height: 32px;
 }
 
-.search input[type="search"] {
+nav .search input[type="search"] {
   flex: 3;
 }
 
-.search input[type="submit"] {
+nav .search input[type="submit"] {
   flex: 1;
   margin-left: 1rem;
   background: #333;
